@@ -1,0 +1,12 @@
+- name: variables
+  hosts: localhost
+  vars:
+    Course: "jenkins"
+    Trainer: "sivakumar"
+    Duration: "120hrs"
+  tasks:
+  - name: print override information
+    vars:
+      Course: "jenkins"
+    ansible.builtin.debug:
+      msg: "Hello we are learning {{Course}} from trainer {{Trainer}}, duration is {{Duration}}."
