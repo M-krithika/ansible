@@ -10,3 +10,8 @@
       Course: "jenkins"
     ansible.builtin.debug:
       msg: "Hello we are learning {{Course}} from trainer {{Trainer}}, duration is {{Duration}}."
+  
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hello we are learning {{Course}} from trainer {{Trainer}}, duration is {{Duration}}."
+
